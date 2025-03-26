@@ -100,7 +100,7 @@ nav ul li a:hover {
 
 @media (max-width: 900px) {
 .grid img:hover {
-  transform: scale(1.05);
+  transform: none;
   width: 400px;
   height: auto;
   border-radius: 5px;
