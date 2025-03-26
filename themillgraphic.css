@@ -269,22 +269,22 @@ footer {
 /* Tablets & Smaller Screens */
 @media (max-width: 768px) {
   .full-image, .full-image-2, .full-image-3 {
-    height: 60vh; /* Reduce height for better layout */
+    height: 75vh;
   }
 
   .full-image img, 
   .full-image-2 img, 
   .full-image-3 img {
-    width: 100vw; /* Make it stretch across */
+    width: 100vw;
     height: auto;
   }
 
-  .full-image, .full-image-2 {
+  .full-image {
     margin-top: -100px;
   }
 
-  .full-image-3 {
-    margin-top: -100px;
+  .full-image-2 {
+    margin-top: -200px;
   }
 }
 
@@ -297,7 +297,7 @@ footer {
 }
 
 .Flower1 {
-  bottom: -20px;
+  bottom: 0;
   right: 0;
 }
 
@@ -310,7 +310,7 @@ footer {
 @media (max-width: 768px) {
   .Flower1 {
     position: fixed;
-    bottom: -20px;
+    bottom: 0;
     right: 0;
     height: 175px;
   }
@@ -349,7 +349,7 @@ footer {
   color: #e25a8b;
   font-size: 20px; /* Adjust font size for mobile */
   margin: 40px 20px; /* Increased margin around the text */
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .image-content {
