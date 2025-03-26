@@ -1,4 +1,4 @@
-/* Reset styles */
+/* Reset default margin & padding */
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +11,8 @@ body {
   background: #fffaf5;
   color: #e25a8b;
   font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 40px;
 }
 
@@ -29,42 +31,54 @@ header {
   align-items: center;
 }
 
+/* Full-Width Logo */
+.logo-container {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 100%; /* Stretches across the entire webpage */
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  font-family: "Dongle", sans-serif;
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #e25a8b;
+  padding: 0; /* Remove extra padding */
+  margin: 0; /* Remove extra margin */
+}
+
 nav ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
+nav ul li {
+  display: inline;
+}
+
 nav ul li a {
   color: #fffaf5;
   text-decoration: none;
-  font-size: 30px;
-  padding: 10px;
+  padding: 20px 20px;
+  border-radius: 5px;
   display: inline-block;
 }
 
 nav ul li a:hover {
   color: #f3aec7;
-}
-
-/* Contact Section */
-.contact-container {
-  max-width: 600px;
-  margin: 150px auto 50px;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  color: #e25a8b;
 }
 
 /* Social Media Section */
