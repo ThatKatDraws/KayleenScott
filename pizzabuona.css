@@ -297,7 +297,7 @@ footer {
 }
 
 .Flower1 {
-  bottom: 0;
+  bottom: -20px;
   right: 0;
 }
 
@@ -310,7 +310,7 @@ footer {
 @media (max-width: 768px) {
   .Flower1 {
     position: fixed;
-    bottom: 0;
+    bottom: -20px;
     right: 0;
     height: 175px;
   }
