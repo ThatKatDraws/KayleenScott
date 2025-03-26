@@ -345,36 +345,34 @@ footer {
   }
 }
 
-.Flower1 {
-  position: absolute;
+.Flower1, .Flower2 {
+  position: fixed;
   height: 250px;
   width: auto;
-  bottom: -950px;
-  right: 0px;
-}
-
-.Flower2 {
-  position: absolute;
-  height: 60px;
-  width: auto;
-  left: 25px;
-  top: 110px;
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) { 
-  .Flower1 {
-    bottom: -750px;
-    height: 150px;
-    width: auto;
-  }
+.Flower1 {
+  bottom: 0;
+  right: 0;
 }
 
-@media (max-width: 768px) { 
+.Flower2 {
+  left: 25px;
+  top: 0px;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .Flower1 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 175px;
+  }
+
   .Flower2 {
     height: 50px;
-    width: auto;
-    left: 0px;
-    margin-bottom: 20px;
+    left: 0;
   }
 }
