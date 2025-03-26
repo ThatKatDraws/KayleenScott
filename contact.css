@@ -258,6 +258,8 @@ button:hover {
       margin: 30px auto;
       padding: 15px;
       margin-top: 100px;
+        display: flex;
+        flex-direction: column;
   }
 
   h1 {
@@ -272,10 +274,6 @@ button:hover {
 @media (max-width: 768px) { 
   .socials2 p {
     display: none;
-  }
-  .socials2 img {
-    display: flex;
-    flex-direction: column;
   }
 }
 
