@@ -1,0 +1,380 @@
+/* Reset default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  text-align: center;
+  background: #fffaf5;
+  color: #e25a8b;
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #e25a8b;
+  transition: transform 0.4s ease-in-out;
+  z-index: 1000;
+  padding: 0; /* Ensure no extra padding */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Full-Width Logo */
+.logo-container {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 100%; /* Stretches across the entire webpage */
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  font-family: "Dongle", sans-serif;
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #e25a8b;
+  padding: 0; /* Remove extra padding */
+  margin: 0; /* Remove extra margin */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fffaf5;
+  text-decoration: none;
+  padding: 20px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  color: #f3aec7;
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding-top: 100px; /* Prevents overlap with fixed header */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #fffaf5;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+.grid img:hover {
+  transform: scale(1.05);
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+}
+}
+
+/* ✅ When the screen is smaller than 600px, switch to 1 column */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid img:hover {
+    transform: scale(1.05);
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+  }
+  }
+
+.grid img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+  width: 500px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+/* About Section */
+#about {
+  margin-top: 100px;
+  padding: 40px;
+  background: #fffaf5;
+  color: #e25a8b;
+}
+
+/* Hide Header on Scroll */
+.hidden {
+  transform: translateY(-100%);
+}
+
+#contact {
+  margin-top: 100px;
+  padding: 40px;
+  background: #fffaf5;
+  color: #e25a8b;
+}
+
+footer {
+  background: #fffaf5; /* Footer background */
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 15pt;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+
+.socials img {
+  width: auto; /* Adjust icon size */
+  height: 45px;
+  transition: transform 0.3s ease;
+  margin: none;
+  padding: none;
+}
+
+.socials img:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+}
+
+.socials p {
+  margin-top: 10px;
+  color: #e25a8b;
+}
+
+.socials a :hover {
+  color: #f3aec7;
+}
+
+.socials a :visited {
+  color: #b2ddf6;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+
+@media (max-width: 768px) { 
+  .socials p {
+    display: none;
+  }
+}
+
+
+.gowun-dodum-regular {
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.raleway-sans {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Change to 700 for bold */
+  font-style: normal;
+}
+
+/* General Slide Formatting */
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background: #fffaf5;
+  color: #e25a8b;
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+
+
+/* Text Styling */
+.text-content {
+  flex: 1; /* Takes up half of the space */
+  text-align: left;
+  padding: 10px;
+  max-width: 500px;
+  margin-left: 150px;
+  margin-top: 100px;
+  color: #e25a8b;
+  font-size: 35pt;
+}
+
+/* Image Styling */
+.image-content {
+  flex: 1; /* Takes up the other half */
+}
+
+.image-content img {
+  width: 100%; /* Makes sure the image fills its container */
+  max-width: 600px; /* Prevents it from getting too big */
+  margin-top: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slide {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content, .image-content {
+    width: 100%;
+    max-width: none;
+    margin: 10px 0;
+  }
+
+  .image-content {
+    margin-top: -80px;
+  }
+}
+
+/* Body Copy */
+.bodycopy {
+  font-size: 12pt;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+
+/* Full-Image Container */
+.full-image, 
+.full-image-2, 
+.full-image-3 {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  width: 100%; /* Full width */
+  height: auto; /* Adjusts height based on content */
+}
+
+/* Image Properties */
+.full-image img, 
+.full-image-2 img, 
+.full-image-3 img {
+  width: 80%; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Fills container without distortion */
+  display: block;
+  margin: 100px auto 0 auto; /* Centers image horizontally */
+}
+
+
+/* Tablets & Smaller Screens */
+@media (max-width: 768px) {
+  .full-image, .full-image-2, .full-image-3 {
+    width: 100%; /* Full width */
+    height: 400px; /* Set a smaller height for mobile */
+  }
+
+  .full-image img, 
+  .full-image-2 img, 
+  .full-image-3 img {
+    width: 100%; /* Ensure the image stretches across the entire width */
+    height: 100%; /* Ensure the image stretches across the entire height */
+    object-fit: cover; /* Maintain aspect ratio and cover the screen */
+  }
+}
+
+
+@media (max-width: 768px) { 
+  #portfolio, .slide, #about, #contact {
+    padding-top: 170px; /* Adjust to match header height */
+  }
+}
+
+.Flower1 {
+  position: absolute;
+  height: 250px;
+  width: auto;
+  bottom: -950px;
+  right: 0px;
+}
+
+.Flower2 {
+  position: absolute;
+  height: 60px;
+  width: auto;
+  left: 25px;
+  top: 110px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) { 
+  .Flower1 {
+    bottom: -750px;
+    height: 150px;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) { 
+  .Flower2 {
+    height: 50px;
+    width: auto;
+    left: 0px;
+    margin-bottom: 20px;
+  }
+}

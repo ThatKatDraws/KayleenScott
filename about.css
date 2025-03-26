@@ -1,0 +1,370 @@
+/* Reset default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  text-align: center;
+  background: #fffaf5;
+  color: #e25a8b;
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #e25a8b;
+  transition: transform 0.4s ease-in-out;
+  z-index: 1000;
+  padding: 0; /* Ensure no extra padding */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Full-Width Logo */
+.logo-container {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 100%; /* Stretches across the entire webpage */
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  font-family: "Dongle", sans-serif;
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #e25a8b;
+  padding: 0; /* Remove extra padding */
+  margin: 0; /* Remove extra margin */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fffaf5;
+  text-decoration: none;
+  padding: 20px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  color: #f3aec7;
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding-top: 100px; /* Prevents overlap with fixed header */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #fffaf5;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+.grid img:hover {
+  transform: scale(1.05);
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+}
+}
+
+/* ✅ When the screen is smaller than 600px, switch to 1 column */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid img:hover {
+    transform: scale(1.05);
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+  }
+  }
+
+.grid img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+  width: 500px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+/* About Section */
+#about {
+  margin-top: 100px;
+  padding: 40px;
+  background: #fffaf5;
+  color: #e25a8b;
+}
+
+
+/* Hide Header on Scroll */
+.hidden {
+  transform: translateY(-100%);
+}
+
+#contact {
+  margin-top: 100px;
+  padding: 40px;
+  background: #fffaf5;
+  color: #e25a8b;
+}
+
+footer {
+  background: #fffaf5; /* Footer background */
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 15pt;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+
+.socials img {
+  width: auto; /* Adjust icon size */
+  height: 45px;
+  transition: transform 0.3s ease;
+  margin: none;
+  padding: none;
+}
+
+.socials img:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+}
+
+.socials p {
+  margin-top: 10px;
+  color: #e25a8b;
+}
+
+.socials a :hover {
+  color: #f3aec7;
+}
+
+.socials a :visited {
+  color: #b2ddf6;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+
+@media (max-width: 768px) { 
+  .socials p {
+    display: none;
+  }
+}
+
+.gowun-dodum-regular {
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.raleway-sans {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Change to 700 for bold */
+  font-style: normal;
+}
+
+/* General Slide Formatting */
+.slide {
+  align-items: center;
+  justify-content: center;
+  background: #fffaf5;
+  color: #e25a8b;
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: none;
+  padding: none;
+}
+
+
+
+/* Text Styling */
+.text-content {
+  flex: 1; /* Takes up half of the space */
+  text-align: left;
+  max-width: 500px;
+  margin-left: 150px;
+  color: #e25a8b;
+  font-size: 35pt;
+  margin-top: -50px;
+}
+
+.image-content img {
+  width: 100%; /* Makes sure the image fills its container */
+  max-width: 600px; /* Prevents it from getting too big */
+  margin-top: 100px;
+  padding: none;
+
+}
+
+
+.image-content2 img {
+  width: 800px;
+  margin-top: -250px;
+  margin-left: 75px;
+  padding-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  
+  /* Text Styling */
+  .text-content {
+    flex: 1;
+    text-align: left;
+    max-width: 500px;
+    margin: 100px 0 0 150px;
+    color: #e25a8b;
+    font-size: 35pt;
+    padding: 0;
+  }
+  
+  /* Mobile-Friendly Styles */
+  @media (max-width: 768px) {
+    .slide {
+      flex-direction: column;
+      display: flex; /* Ensure proper stacking */
+      text-align: center;
+      padding: 20px;
+      margin-top: 100px;
+    }
+  
+    .text-content {
+      width: 90%;
+      max-width: none;
+      margin: 20px auto; /* Center content on mobile */
+      font-size: 28pt; /* Reduce font size for better readability */
+      text-align: center;
+    }
+  
+    .image-content img {
+      width: 100%;
+      max-width: 90%;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    .image-content2 img {
+      width: 500px;
+      margin-top: -50px;
+      margin-left: 0px;
+    }
+  }
+  
+
+
+}
+
+/* Body Copy */
+.bodycopy {
+  font-size: 12pt;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+.Flower1 {
+  position: absolute;
+  height: 250px;
+  width: auto;
+  bottom: -200px;
+  right: 0px;
+}
+
+.Flower2 {
+  position: absolute;
+  height: 60px;
+  width: auto;
+  left: 25px;
+  top: 110px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) { 
+  .Flower1 {
+    bottom: -500px;
+    height: 150px;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) { 
+  .Flower2 {
+    height: 50px;
+    width: auto;
+    left: 0px;
+    margin-bottom: 20px;
+  }
+}
