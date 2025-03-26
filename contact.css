@@ -273,6 +273,10 @@ button:hover {
   .socials2 p {
     display: none;
   }
+  .socials2 img {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .socials2 p {
