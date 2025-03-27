@@ -82,6 +82,9 @@ nav ul li a:hover {
 }
 
 /* Social Media Section */
+.contact-container{
+  margin-top: 100px;
+}
 .socials2 {
   margin-top: 40px;
   display: flex;
