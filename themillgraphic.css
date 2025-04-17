@@ -398,3 +398,7 @@ footer {
 h2 {
   font-size: 70px;
 }
+
+.socials a :hover {
+  color: #f3aec7;
+}

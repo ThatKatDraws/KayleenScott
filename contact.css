@@ -77,9 +77,11 @@ nav ul li a {
   display: inline-block;
 }
 
-nav ul li a:hover {
+nav ul li a :hover {
   color: #f3aec7;
 }
+
+
 
 /* Social Media Section */
 .contact-container{
