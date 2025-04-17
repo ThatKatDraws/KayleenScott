@@ -15,6 +15,12 @@ body {
   font-size: 40px;
 }
 
+.gowun-dodum-regular {
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Header */
 header {
   position: fixed;
